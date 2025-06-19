@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head prefix="og: https://ogp.me/ns#">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  
+  <title>Git使用帮助 - 壹拾叁月</title>
+  
+    <link rel="shortcut icon" href="/image/icon/favicon/favicon.ico">
+  
+  
+    <link rel='manifest' href='/manifest.json'>
+  
+
+  
+  
+  
+  <meta property="og:title" content="Git使用帮助 - 壹拾叁月" />
+  
+  <meta property="og:type" content="article" />
+  
+  <meta property="og:url" content="https://666zty.github.io/2025/06/20/gitHELP/index.html" />
+  
+  <meta property="og:image" content="/image/icon/favicon/favicon-32x32.png" />
+  
+  <meta property="og:article:published_time" content="2025-06-19T18:23:05.000Z" />
+  
+  <meta property="og:article:author" content="Tianyi Zhong" />
+  
+  
+
+  
+<link rel="stylesheet" href="/css/var.css">
+
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+<link rel="stylesheet" href="/css/typography.css">
+
+  
+<link rel="stylesheet" href="/css/code-highlighting.css">
+
+  
+<link rel="stylesheet" href="/css/components.css">
+
+  
+<link rel="stylesheet" href="/css/nav.css">
+
+  
+<link rel="stylesheet" href="/css/paginator.css">
+
+  
+<link rel="stylesheet" href="/css/footer.css">
+
+  
+<link rel="stylesheet" href="/css/post-list.css">
+
+  
+  
+<link rel="stylesheet" href="/css/rainbow-banner.css">
+
+  
+  
+  
+<link rel="stylesheet" href="/css/toc.css">
+
+  
+  
+  
+  
+  
+<link rel="stylesheet" href="/css/post.css">
+
+  
+  
+  
+  
+  
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+    <body
+        data-color-scheme="auto"
+        data-uppercase-categories="true"
+        
+        data-rainbow-banner="true"
+        data-rainbow-banner-shown="auto"
+        data-rainbow-banner-month="6"
+        data-rainbow-banner-colors="#e50000,#ff8d00,#ffee00,#008121,#004cff,#760188"
+        
+        data-config-root="/"
+        
+        data-toc="true"
+        data-toc-max-depth="2"
+        
+        
+    >
+        <nav id="theme-nav">
+    <div class="inner">
+        <a class="title" href="/">壹拾叁月</a>
+        <div class="nav-arrow"></div>
+        <div class="nav-items">
+            <a class="nav-item nav-item-home" href="/">幽默主页</a>
+            
+            
+            <a class="nav-item" href="/archives">发电实录</a>
+            
+            
+            
+            <a class="nav-item" href="/friends">友情链接</a>
+            
+            
+            
+            <a class="nav-item" href="/projects">神秘项目</a>
+            
+            
+            
+            <a class="nav-item" href="/about">关于鄙人</a>
+            
+            
+            
+            <a class="nav-item nav-item-github nav-item-icon" href="https://github.com/666zty" target="_blank" aria-label="GitHub">&nbsp;</a>
+            <!-- 
+            
+            
+            <a class="nav-item nav-item-codepen nav-item-icon" href="https://codepen.io/mrwillcom" target="_blank" aria-label="CodePen">&nbsp;</a>
+            
+            
+            
+            <a class="nav-item nav-item-patreon nav-item-icon" href="https://www.patreon.com/MrWillCom" target="_blank" aria-label="Patreon">&nbsp;</a>
+            
+            
+            
+            <a class="nav-item nav-item-mastodon nav-item-icon" href="https://noc.social/@MrWillCom" target="_blank" aria-label="Mastodon">&nbsp;</a>
+            
+            
+            
+            <a class="nav-item nav-item-discord nav-item-icon" href="https://discord.gg/UKuFDjcfY8" target="_blank" aria-label="Discord">&nbsp;</a> -->
+            
+            
+            
+            <a class="nav-item nav-item-search nav-item-icon" href="/search" target="_blank" aria-label="Search">&nbsp;</a>
+            
+            
+        </div>
+    </div>
+</nav>
+        
+<article class="post">
+    <div class="meta">
+        
+        <div class="categories text-uppercase">
+        
+            <a href="/categories/tech/">学习分享</a>
+        
+        </div>
+        
+
+        
+        <div class="date" id="date">
+            <span>June</span>
+            <span>20,</span>
+            <span>2025</span>
+            <span class="time"><br>02:23:05</span>
+        </div>
+        
+
+        <h1 class="title">Git使用帮助</h1>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="content">
+        <!-- 
+category_map:
+  生活随笔: life
+  学习分享: tech
+tag_map:
+  随笔（更空想）: life
+  记录（更实际）: record
+  发电: mad
+  笔记: note
+  学习: study 
+-->
+
+<blockquote>
+<p>Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。<br>——*<a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-tutorial.html">Git 菜鸟教程</a>*</p>
+</blockquote>
+<hr>
+<h1 id="新建"><a href="#新建" class="headerlink" title="新建"></a>新建</h1><p>创建一个新的 git 版本库。这个版本库的配置、存储等信息会被保存到git 文件夹中</p>
+<hr>
+<h2 id="初始化当前项目"><a href="#初始化当前项目" class="headerlink" title="初始化当前项目"></a>初始化当前项目</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="新建一个目录，将其初始化为Git代码库"><a href="#新建一个目录，将其初始化为Git代码库" class="headerlink" title="新建一个目录，将其初始化为Git代码库"></a>新建一个目录，将其初始化为Git代码库</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init [project-name]</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="在指定目录创建一个空的-Git-仓库。"><a href="#在指定目录创建一个空的-Git-仓库。" class="headerlink" title="在指定目录创建一个空的 Git 仓库。"></a>在指定目录创建一个空的 Git 仓库。</h2><p>运行这个命令会创建一个名为 directory，只包含 .git 子目录的空目录。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init --bare &lt;directory&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="下载一个项目和它的整个代码历史"><a href="#下载一个项目和它的整个代码历史" class="headerlink" title="下载一个项目和它的整个代码历史"></a>下载一个项目和它的整个代码历史</h2><p>这个命令就是将一个版本库拷贝到另一个目录中，同时也将分支都拷贝到新的版本库中。这样就可以在新的版本库中提交到远程分支</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> [url]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>更改设置。可以是版本库的设置，也可以是系统的或全局的</p>
+<hr>
+<h2 id="显示当前的Git配置"><a href="#显示当前的Git配置" class="headerlink" title="显示当前的Git配置"></a>显示当前的Git配置</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --list</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="编辑Git配置文件"><a href="#编辑Git配置文件" class="headerlink" title="编辑Git配置文件"></a>编辑Git配置文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config -e [--global]</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="输出、设置基本的全局变量"><a href="#输出、设置基本的全局变量" class="headerlink" title="输出、设置基本的全局变量"></a>输出、设置基本的全局变量</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.email</span><br><span class="line">$ git config --global user.name</span><br><span class="line"></span><br><span class="line">$ git config --global user.email <span class="string">&quot;MyEmail@gmail.com&quot;</span></span><br><span class="line">$ git config --global user.name <span class="string">&quot;My Name&quot;</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="定义当前用户所有提交使用的作者邮箱"><a href="#定义当前用户所有提交使用的作者邮箱" class="headerlink" title="定义当前用户所有提交使用的作者邮箱"></a>定义当前用户所有提交使用的作者邮箱</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global <span class="built_in">alias</span>.&lt;alias-name&gt; &lt;git-command&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="为Git命令创建一个快捷方式（别名）"><a href="#为Git命令创建一个快捷方式（别名）" class="headerlink" title="为Git命令创建一个快捷方式（别名）"></a>为Git命令创建一个快捷方式（别名）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --system core.editor &lt;editor&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h1><p>显示索引文件（也就是当前工作空间）和当前的头指针指向的提交的不同</p>
+<hr>
+<h2 id="显示分支，未跟踪文件，更改和其他不同"><a href="#显示分支，未跟踪文件，更改和其他不同" class="headerlink" title="显示分支，未跟踪文件，更改和其他不同"></a>显示分支，未跟踪文件，更改和其他不同</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="查看其他的git-status的用法"><a href="#查看其他的git-status的用法" class="headerlink" title="查看其他的git status的用法"></a>查看其他的git status的用法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">help</span> status</span><br></pre></td></tr></table></figure>
+
+<h1 id="信息"><a href="#信息" class="headerlink" title="信息"></a>信息</h1><p>获取某些文件、某些分支、某次提交等 Git 信息</p>
+<hr>
+<h2 id="提交信息"><a href="#提交信息" class="headerlink" title="提交信息"></a>提交信息</h2><h3 id="commit-历史以及每次-commit-发生变更的文件"><a href="#commit-历史以及每次-commit-发生变更的文件" class="headerlink" title="commit 历史以及每次 commit 发生变更的文件"></a>commit 历史以及每次 commit 发生变更的文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --<span class="built_in">stat</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="搜索提交历史，根据关键词"><a href="#搜索提交历史，根据关键词" class="headerlink" title="搜索提交历史，根据关键词"></a>搜索提交历史，根据关键词</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> -S [keyword]</span><br></pre></td></tr></table></figure>
+<h3 id="显示某个-commit-之后的所有变动，每个-commit-占据一行"><a href="#显示某个-commit-之后的所有变动，每个-commit-占据一行" class="headerlink" title="显示某个 commit 之后的所有变动，每个 commit 占据一行"></a>显示某个 commit 之后的所有变动，每个 commit 占据一行</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> [tag] HEAD --pretty=format:%s</span><br></pre></td></tr></table></figure>
+<h3 id="显示某个-commit-之后的所有变动，其”提交说明”必须符合搜索条件"><a href="#显示某个-commit-之后的所有变动，其”提交说明”必须符合搜索条件" class="headerlink" title="显示某个 commit 之后的所有变动，其”提交说明”必须符合搜索条件"></a>显示某个 commit 之后的所有变动，其”提交说明”必须符合搜索条件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> [tag] HEAD --grep feature</span><br></pre></td></tr></table></figure>
+<h3 id="显示某个文件的版本历史，包括文件改名"><a href="#显示某个文件的版本历史，包括文件改名" class="headerlink" title="显示某个文件的版本历史，包括文件改名"></a>显示某个文件的版本历史，包括文件改名</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> --follow [file]</span><br><span class="line">$ git whatchanged [file]</span><br></pre></td></tr></table></figure>
+<h3 id="显示指定文件相关的每一次-diff"><a href="#显示指定文件相关的每一次-diff" class="headerlink" title="显示指定文件相关的每一次 diff"></a>显示指定文件相关的每一次 diff</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> -p [file]</span><br></pre></td></tr></table></figure>
+<h3 id="显示过去-5-次提交"><a href="#显示过去-5-次提交" class="headerlink" title="显示过去 5 次提交"></a>显示过去 5 次提交</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> -5 --pretty --oneline</span><br></pre></td></tr></table></figure>
+<h3 id="显示所有提交过的用户，按提交次数排序"><a href="#显示所有提交过的用户，按提交次数排序" class="headerlink" title="显示所有提交过的用户，按提交次数排序"></a>显示所有提交过的用户，按提交次数排序</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git shortlog -sn</span><br></pre></td></tr></table></figure>
+<h3 id="显示指定文件是什么人在什么时间修改过"><a href="#显示指定文件是什么人在什么时间修改过" class="headerlink" title="显示指定文件是什么人在什么时间修改过"></a>显示指定文件是什么人在什么时间修改过</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git blame [file]</span><br></pre></td></tr></table></figure>
+<h3 id="显示暂存区和工作区的差异"><a href="#显示暂存区和工作区的差异" class="headerlink" title="显示暂存区和工作区的差异"></a>显示暂存区和工作区的差异</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git diff</span><br></pre></td></tr></table></figure>
+<h3 id="显示暂存区和上一个-commit-的差异"><a href="#显示暂存区和上一个-commit-的差异" class="headerlink" title="显示暂存区和上一个 commit 的差异"></a>显示暂存区和上一个 commit 的差异</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git diff --cached [file]</span><br></pre></td></tr></table></figure>
+<h3 id="显示工作区与当前分支最新-commit-之间的差异"><a href="#显示工作区与当前分支最新-commit-之间的差异" class="headerlink" title="显示工作区与当前分支最新 commit 之间的差异"></a>显示工作区与当前分支最新 commit 之间的差异</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git diff HEAD</span><br></pre></td></tr></table></figure>
+
+<h3 id="显示两次提交之间的差异"><a href="#显示两次提交之间的差异" class="headerlink" title="显示两次提交之间的差异"></a>显示两次提交之间的差异</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git diff [first-branch]...[second-branch]</span><br></pre></td></tr></table></figure>
+<h3 id="显示今天你写了多少行代码"><a href="#显示今天你写了多少行代码" class="headerlink" title="显示今天你写了多少行代码"></a>显示今天你写了多少行代码</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git diff --shortstat <span class="string">&quot;@&#123;0 day ago&#125;&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="比较暂存区和版本库差异"><a href="#比较暂存区和版本库差异" class="headerlink" title="比较暂存区和版本库差异"></a>比较暂存区和版本库差异</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git diff --staged</span><br><span class="line">$ git diff --cached</span><br></pre></td></tr></table></figure>
+<h3 id="仅仅比较统计信息"><a href="#仅仅比较统计信息" class="headerlink" title="仅仅比较统计信息"></a>仅仅比较统计信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git diff --<span class="built_in">stat</span></span><br></pre></td></tr></table></figure>
+<h3 id="显示某次提交的元数据和内容变化"><a href="#显示某次提交的元数据和内容变化" class="headerlink" title="显示某次提交的元数据和内容变化"></a>显示某次提交的元数据和内容变化</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git show [commit]</span><br></pre></td></tr></table></figure>
+<h3 id="显示某次提交发生变化的文件"><a href="#显示某次提交发生变化的文件" class="headerlink" title="显示某次提交发生变化的文件"></a>显示某次提交发生变化的文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git show --name-only [commit]</span><br></pre></td></tr></table></figure>
+<h3 id="显示某次提交时，某个文件的内容"><a href="#显示某次提交时，某个文件的内容" class="headerlink" title="显示某次提交时，某个文件的内容"></a>显示某次提交时，某个文件的内容</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git show [commit]:[filename]</span><br></pre></td></tr></table></figure>
+<h3 id="显示当前分支的最近几次提交"><a href="#显示当前分支的最近几次提交" class="headerlink" title="显示当前分支的最近几次提交"></a>显示当前分支的最近几次提交</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reflog</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="分支信息"><a href="#分支信息" class="headerlink" title="分支信息"></a>分支信息</h2><h3 id="列出所有远程分支"><a href="#列出所有远程分支" class="headerlink" title="列出所有远程分支"></a>列出所有远程分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git br -r</span><br></pre></td></tr></table></figure>
+<h3 id="创建新的分支"><a href="#创建新的分支" class="headerlink" title="创建新的分支"></a>创建新的分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git br &lt;new_branch&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="查看各个分支最后提交信息"><a href="#查看各个分支最后提交信息" class="headerlink" title="查看各个分支最后提交信息"></a>查看各个分支最后提交信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git br -v</span><br></pre></td></tr></table></figure>
+<h3 id="查看已经被合并到当前分支的分支"><a href="#查看已经被合并到当前分支的分支" class="headerlink" title="查看已经被合并到当前分支的分支"></a>查看已经被合并到当前分支的分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git br --merged</span><br></pre></td></tr></table></figure>
+<h3 id="查看尚未被合并到当前分支的分支"><a href="#查看尚未被合并到当前分支的分支" class="headerlink" title="查看尚未被合并到当前分支的分支"></a>查看尚未被合并到当前分支的分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git br --no-merged</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h1><p>将文件添加到暂存区，以便后续提交</p>
+<hr>
+<h2 id="添加一个文件"><a href="#添加一个文件" class="headerlink" title="添加一个文件"></a>添加一个文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add test.js</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="添加一个子目录中的文件"><a href="#添加一个子目录中的文件" class="headerlink" title="添加一个子目录中的文件"></a>添加一个子目录中的文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add /path/to/file/test.js</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="支持正则表达式"><a href="#支持正则表达式" class="headerlink" title="支持正则表达式"></a>支持正则表达式</h2><p>添加当前目录下所有<code>.js</code>文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add ./*.js</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="添加指定文件到暂存区（多个文件）"><a href="#添加指定文件到暂存区（多个文件）" class="headerlink" title="添加指定文件到暂存区（多个文件）"></a>添加指定文件到暂存区（多个文件）</h2><ul>
+<li><p>语法</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add [file1] [file2] ...</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>示例</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add file1.txt file2.txt</span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="添加指定目录到暂存区"><a href="#添加指定目录到暂存区" class="headerlink" title="添加指定目录到暂存区"></a>添加指定目录到暂存区</h2><p>包括子目录中的所有文件</p>
+<ul>
+<li><p>语法</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add [<span class="built_in">dir</span>]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>示例</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add src/</span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="添加当前目录下的所有文件到暂存区"><a href="#添加当前目录下的所有文件到暂存区" class="headerlink" title="添加当前目录下的所有文件到暂存区"></a>添加当前目录下的所有文件到暂存区</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="交互式添加"><a href="#交互式添加" class="headerlink" title="交互式添加"></a>交互式添加</h2><p>每次变更前确认（适合分批提交）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add -p</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h1><p>从工作区和版本库中移除文件</p>
+<hr>
+<h2 id="移除一个文件"><a href="#移除一个文件" class="headerlink" title="移除一个文件"></a>移除一个文件</h2><p>如 <code>HelloWorld.js</code>，该命令会从工作区和暂存区中删除文件，下次提交时该文件将不再被追踪。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">rm</span> HelloWorld.js</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="移除子目录中的文件"><a href="#移除子目录中的文件" class="headerlink" title="移除子目录中的文件"></a>移除子目录中的文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">rm</span> /pather/to/the/file/HelloWorld.js</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="删除多个指定文件并将删除操作加入暂存区"><a href="#删除多个指定文件并将删除操作加入暂存区" class="headerlink" title="删除多个指定文件并将删除操作加入暂存区"></a>删除多个指定文件并将删除操作加入暂存区</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">rm</span> [file1] [file2] ...</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="停止追踪指定文件但保留文件在工作区"><a href="#停止追踪指定文件但保留文件在工作区" class="headerlink" title="停止追踪指定文件但保留文件在工作区"></a>停止追踪指定文件但保留文件在工作区</h2><p>常用于误提交的文件，如<code>.gitignore</code>中新增的文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">rm</span> --cached [file]</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h1><p>管理分支，支持增删改查、切换、合并等操作</p>
+<hr>
+<h2 id="查看所有本地和远程分支"><a href="#查看所有本地和远程分支" class="headerlink" title="查看所有本地和远程分支"></a>查看所有本地和远程分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -a</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="创建一个新的分支（不切换）"><a href="#创建一个新的分支（不切换）" class="headerlink" title="创建一个新的分支（不切换）"></a>创建一个新的分支（不切换）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch [branch-name]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="重命名当前分支或指定分支"><a href="#重命名当前分支或指定分支" class="headerlink" title="重命名当前分支或指定分支"></a>重命名当前分支或指定分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -m [old-name] [new-name]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="编辑分支的描述信息"><a href="#编辑分支的描述信息" class="headerlink" title="编辑分支的描述信息"></a>编辑分支的描述信息</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch [branch-name] --edit-description</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="列出所有本地分支"><a href="#列出所有本地分支" class="headerlink" title="列出所有本地分支"></a>列出所有本地分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="列出所有远程分支-1"><a href="#列出所有远程分支-1" class="headerlink" title="列出所有远程分支"></a>列出所有远程分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -r</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="新建一个分支，但停留在当前分支"><a href="#新建一个分支，但停留在当前分支" class="headerlink" title="新建一个分支，但停留在当前分支"></a>新建一个分支，但停留在当前分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch [branch-name]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="新建一个分支并立即切换到该分支"><a href="#新建一个分支并立即切换到该分支" class="headerlink" title="新建一个分支并立即切换到该分支"></a>新建一个分支并立即切换到该分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b [branch]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="新建一个分支，指向某个指定的-commit"><a href="#新建一个分支，指向某个指定的-commit" class="headerlink" title="新建一个分支，指向某个指定的 commit"></a>新建一个分支，指向某个指定的 commit</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch [branch] [commit]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="新建一个分支，并与指定远程分支建立追踪关系"><a href="#新建一个分支，并与指定远程分支建立追踪关系" class="headerlink" title="新建一个分支，并与指定远程分支建立追踪关系"></a>新建一个分支，并与指定远程分支建立追踪关系</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch --track [branch] [remote-branch]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="切换到指定分支，并更新工作区内容"><a href="#切换到指定分支，并更新工作区内容" class="headerlink" title="切换到指定分支，并更新工作区内容"></a>切换到指定分支，并更新工作区内容</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout [branch-name]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="切换回上一个所在的分支"><a href="#切换回上一个所在的分支" class="headerlink" title="切换回上一个所在的分支"></a>切换回上一个所在的分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="建立当前分支与远程分支的追踪关系"><a href="#建立当前分支与远程分支的追踪关系" class="headerlink" title="建立当前分支与远程分支的追踪关系"></a>建立当前分支与远程分支的追踪关系</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch --set-upstream [branch] [remote-branch]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="合并指定分支到当前分支"><a href="#合并指定分支到当前分支" class="headerlink" title="合并指定分支到当前分支"></a>合并指定分支到当前分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git merge [branch]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="将某次提交（commit）应用到当前分支"><a href="#将某次提交（commit）应用到当前分支" class="headerlink" title="将某次提交（commit）应用到当前分支"></a>将某次提交（commit）应用到当前分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git cherry-pick [commit]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="删除一个本地分支（需已合并）"><a href="#删除一个本地分支（需已合并）" class="headerlink" title="删除一个本地分支（需已合并）"></a>删除一个本地分支（需已合并）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d [branch-name]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="强制删除一个本地分支（即使未被合并）"><a href="#强制删除一个本地分支（即使未被合并）" class="headerlink" title="强制删除一个本地分支（即使未被合并）"></a>强制删除一个本地分支（即使未被合并）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -D [branch-name]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin --delete [branch-name]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="删除远程分支的本地追踪分支"><a href="#删除远程分支的本地追踪分支" class="headerlink" title="删除远程分支的本地追踪分支"></a>删除远程分支的本地追踪分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -dr [remote/branch]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="快速切换分支命令"><a href="#快速切换分支命令" class="headerlink" title="快速切换分支命令"></a>快速切换分支命令</h2><h3 id="切换到某个分支"><a href="#切换到某个分支" class="headerlink" title="切换到某个分支"></a>切换到某个分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git co &lt;branch&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="创建新分支并切换过去"><a href="#创建新分支并切换过去" class="headerlink" title="创建新分支并切换过去"></a>创建新分支并切换过去</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git co -b &lt;new_branch&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="基于已有分支创建新分支并切换"><a href="#基于已有分支创建新分支并切换" class="headerlink" title="基于已有分支创建新分支并切换"></a>基于已有分支创建新分支并切换</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git co -b &lt;new_branch&gt; &lt;base-branch&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="检出某次历史提交"><a href="#检出某次历史提交" class="headerlink" title="检出某次历史提交"></a>检出某次历史提交</h3><p>进入 detached HEAD 状态</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git co <span class="variable">$id</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="检出某次提交并创建为新分支"><a href="#检出某次提交并创建为新分支" class="headerlink" title="检出某次提交并创建为新分支"></a>检出某次提交并创建为新分支</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git co <span class="variable">$id</span> -b &lt;new_branch&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="删除分支快捷方式"><a href="#删除分支快捷方式" class="headerlink" title="删除分支快捷方式"></a>删除分支快捷方式</h2><h3 id="删除本地分支"><a href="#删除本地分支" class="headerlink" title="删除本地分支"></a>删除本地分支</h3><p>需已合并</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git br -d &lt;branch&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="强制删除本地分支"><a href="#强制删除本地分支" class="headerlink" title="强制删除本地分支"></a>强制删除本地分支</h3><p>无视是否合并</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git br -D &lt;branch&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="检出"><a href="#检出" class="headerlink" title="检出"></a>检出</h1><p>将当前工作空间更新到索引所标识的或者某一特定的工作空间</p>
+<hr>
+<h2 id="检出一个版本库"><a href="#检出一个版本库" class="headerlink" title="检出一个版本库"></a>检出一个版本库</h2><ul>
+<li>默认将更新到master分支  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout</span><br></pre></td></tr></table></figure></li>
+<li>检出到一个特定的分支  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout branchName</span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="新建一个分支，并且切换过去"><a href="#新建一个分支，并且切换过去" class="headerlink" title="新建一个分支，并且切换过去"></a>新建一个分支，并且切换过去</h2><p>相当于<code>git branch &lt;名字&gt;; git checkout &lt;名字&gt;</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b newBranch</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="远程同步"><a href="#远程同步" class="headerlink" title="远程同步"></a>远程同步</h1><p>管理远程仓库并进行代码同步</p>
+<hr>
+<h2 id="下载远程仓库的所有变动（不合并）"><a href="#下载远程仓库的所有变动（不合并）" class="headerlink" title="下载远程仓库的所有变动（不合并）"></a>下载远程仓库的所有变动（不合并）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch [remote]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="显示所有已配置的远程仓库"><a href="#显示所有已配置的远程仓库" class="headerlink" title="显示所有已配置的远程仓库"></a>显示所有已配置的远程仓库</h2><p>显示远程仓库的 URL 地址。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote -v</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="显示某个远程仓库的详细信息"><a href="#显示某个远程仓库的详细信息" class="headerlink" title="显示某个远程仓库的详细信息"></a>显示某个远程仓库的详细信息</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote show [remote]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="添加一个新的远程仓库，并指定简称"><a href="#添加一个新的远程仓库，并指定简称" class="headerlink" title="添加一个新的远程仓库，并指定简称"></a>添加一个新的远程仓库，并指定简称</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add [shortname] [url]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="查看远程服务器地址和仓库名称"><a href="#查看远程服务器地址和仓库名称" class="headerlink" title="查看远程服务器地址和仓库名称"></a>查看远程服务器地址和仓库名称</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote -v</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="添加远程仓库地址"><a href="#添加远程仓库地址" class="headerlink" title="添加远程仓库地址"></a>添加远程仓库地址</h2><p>使用 <code>origin</code> 作为默认名称</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github.com:xxx/xxx.git</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="修改远程仓库地址"><a href="#修改远程仓库地址" class="headerlink" title="修改远程仓库地址"></a>修改远程仓库地址</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote set-url origin git@github.com:xxx/xxx.git</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="删除一个远程仓库配置"><a href="#删除一个远程仓库配置" class="headerlink" title="删除一个远程仓库配置"></a>删除一个远程仓库配置</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote <span class="built_in">rm</span> &lt;repository&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="上传本地指定分支到远程仓库"><a href="#上传本地指定分支到远程仓库" class="headerlink" title="上传本地指定分支到远程仓库"></a>上传本地指定分支到远程仓库</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push [remote] [branch]</span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<h2 id="强行推送当前分支到远程仓库，即使存在冲突（慎用）"><a href="#强行推送当前分支到远程仓库，即使存在冲突（慎用）" class="headerlink" title="强行推送当前分支到远程仓库，即使存在冲突（慎用）"></a>强行推送当前分支到远程仓库，即使存在冲突（慎用）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push [remote] --force</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="推送所有本地分支到远程仓库"><a href="#推送所有本地分支到远程仓库" class="headerlink" title="推送所有本地分支到远程仓库"></a>推送所有本地分支到远程仓库</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push [remote] --all</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h1><p>撤销提交、重置文件或暂存更改</p>
+<hr>
+<h2 id="恢复暂存区的指定文件到工作区（保留工作区修改）"><a href="#恢复暂存区的指定文件到工作区（保留工作区修改）" class="headerlink" title="恢复暂存区的指定文件到工作区（保留工作区修改）"></a>恢复暂存区的指定文件到工作区（保留工作区修改）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout [file]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="恢复某个-commit-的指定文件到暂存区和工作区"><a href="#恢复某个-commit-的指定文件到暂存区和工作区" class="headerlink" title="恢复某个 commit 的指定文件到暂存区和工作区"></a>恢复某个 commit 的指定文件到暂存区和工作区</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout [commit] [file]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="恢复暂存区的所有文件到工作区"><a href="#恢复暂存区的所有文件到工作区" class="headerlink" title="恢复暂存区的所有文件到工作区"></a>恢复暂存区的所有文件到工作区</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout .</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="重置暂存区的指定文件"><a href="#重置暂存区的指定文件" class="headerlink" title="重置暂存区的指定文件"></a>重置暂存区的指定文件</h2><p>上一次 commit 保持一致，但<strong>不改动工作区</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset [file]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="重置暂存区和工作区"><a href="#重置暂存区和工作区" class="headerlink" title="重置暂存区和工作区"></a>重置暂存区和工作区</h2><p>与上一次 commit 完全一致，即<strong>会丢失未提交的修改</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="重置当前分支的指针为指定-commit"><a href="#重置当前分支的指针为指定-commit" class="headerlink" title="重置当前分支的指针为指定 commit"></a>重置当前分支的指针为指定 commit</h2><p>重置暂存区，但<strong>不改动工作区</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset [commit]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="重置当前分支的-HEAD-为指定-commit"><a href="#重置当前分支的-HEAD-为指定-commit" class="headerlink" title="重置当前分支的 HEAD 为指定 commit"></a>重置当前分支的 HEAD 为指定 commit</h2><p>重置暂存区和工作区，<strong>会丢失修改</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard [commit]</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="重置当前-HEAD-为指定-commit"><a href="#重置当前-HEAD-为指定-commit" class="headerlink" title="重置当前 HEAD 为指定 commit"></a>重置当前 HEAD 为指定 commit</h2><p>保留暂存区和工作区不变<br>适用于想回退提交但保留改动内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --keep [commit]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="新建一个-commit"><a href="#新建一个-commit" class="headerlink" title="新建一个 commit"></a>新建一个 commit</h2><p>用于撤销指定 commit 的所有改动，<em>推荐用于公共分支</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git revert [commit]</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="恢复最后一次提交的状态"><a href="#恢复最后一次提交的状态" class="headerlink" title="恢复最后一次提交的状态"></a>恢复最后一次提交的状态</h2><p>撤销最近一次提交</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git revert HEAD</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="暂时将未提交的改动保存起来"><a href="#暂时将未提交的改动保存起来" class="headerlink" title="暂时将未提交的改动保存起来"></a>暂时将未提交的改动保存起来</h2><p>可用于切换分支时保留修改</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git stash</span><br></pre></td></tr></table></figure>
+
+<p>恢复暂存的改动：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git stash pop</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="查看所有暂存的改动记录"><a href="#查看所有暂存的改动记录" class="headerlink" title="查看所有暂存的改动记录"></a>查看所有暂存的改动记录</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git stash list</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="应用某次暂存的内容，不删除-stash-记录"><a href="#应用某次暂存的内容，不删除-stash-记录" class="headerlink" title="应用某次暂存的内容，不删除 stash 记录"></a>应用某次暂存的内容，不删除 stash 记录</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git stash apply</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="删除最近一次暂存的内容"><a href="#删除最近一次暂存的内容" class="headerlink" title="删除最近一次暂存的内容"></a>删除最近一次暂存的内容</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git stash drop</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h1><p>将暂存区的更改保存为一个新的提交</p>
+<hr>
+<h2 id="提交暂存区内容并附带提交信息"><a href="#提交暂存区内容并附带提交信息" class="headerlink" title="提交暂存区内容并附带提交信息"></a>提交暂存区内容并附带提交信息</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m [message]</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="提交暂存区中指定的文件"><a href="#提交暂存区中指定的文件" class="headerlink" title="提交暂存区中指定的文件"></a>提交暂存区中指定的文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit [file1] [file2] ... -m [message]</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="提交工作区自上次提交以来的所有变化"><a href="#提交工作区自上次提交以来的所有变化" class="headerlink" title="提交工作区自上次提交以来的所有变化"></a>提交工作区自上次提交以来的所有变化</h2><p>会自动添加修改过的文件，但不包括新增文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -a</span><br></pre></td></tr></table></figure>
+
+<p>等价于 <code>git add</code> 所有已跟踪文件后提交。</p>
+<hr>
+<h2 id="提交时显示所有-diff-信息"><a href="#提交时显示所有-diff-信息" class="headerlink" title="提交时显示所有 diff 信息"></a>提交时显示所有 diff 信息</h2><p>有助于在提交前确认修改内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -v</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="使用一次新的-commit-替代上一次提交"><a href="#使用一次新的-commit-替代上一次提交" class="headerlink" title="使用一次新的 commit 替代上一次提交"></a>使用一次新的 commit 替代上一次提交</h2><p>适用于<strong>修改最后一次</strong>提交的内容或提交信息</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit --amend -m [message]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="重做上一次提交并加入指定文件的新变化"><a href="#重做上一次提交并加入指定文件的新变化" class="headerlink" title="重做上一次提交并加入指定文件的新变化"></a>重做上一次提交并加入指定文件的新变化</h2><p>仅将指定文件加入到上一次提交中</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit --amend [file1] [file2] ...</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="merge（合并）"><a href="#merge（合并）" class="headerlink" title="merge（合并）"></a><code>merge</code>（合并）</h1><p>合并就是将外部的提交合并到自己的分支中</p>
+<hr>
+<h2 id="将其他分支合并到当前分支"><a href="#将其他分支合并到当前分支" class="headerlink" title="将其他分支合并到当前分支"></a>将其他分支合并到当前分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git merge branchName</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="在合并时创建一个新的合并后的提交"><a href="#在合并时创建一个新的合并后的提交" class="headerlink" title="在合并时创建一个新的合并后的提交"></a>在合并时创建一个新的合并后的提交</h2><p>不要 Fast-Foward 合并，这样可以生成 merge 提交</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git merge --no-ff branchName</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="rebase（变基）"><a href="#rebase（变基）" class="headerlink" title="rebase（变基）"></a><code>rebase</code>（变基）</h1><p>将一个分支上所有的提交历史都应用到另一个分支上<strong>不要</strong>在一个已经公开的远端分支上使用<code>rebase</code>.</p>
+<hr>
+<h2 id="将experimentBranch应用到master上面"><a href="#将experimentBranch应用到master上面" class="headerlink" title="将experimentBranch应用到master上面"></a>将experimentBranch应用到master上面</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git rebase &lt;basebranch&gt; &lt;topicbranch&gt;</span><br><span class="line">$ git rebase master experimentBranch</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="reset-重置"><a href="#reset-重置" class="headerlink" title="reset (重置)"></a><code>reset</code> (重置)</h1><p>将当前的头指针复位到一个特定的状态。这样可以使你撤销 merge、pull、commits、add 等 这是个很强大的命令，但是在使用时一定要清楚其所产生的后果</p>
+<hr>
+<h2 id="使-staging-区域恢复到上次提交时的状态且不改变现在的工作目录"><a href="#使-staging-区域恢复到上次提交时的状态且不改变现在的工作目录" class="headerlink" title="使 staging 区域恢复到上次提交时的状态且不改变现在的工作目录"></a>使 staging 区域恢复到上次提交时的状态且不改变现在的工作目录</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="使-staging-区域恢复到上次提交时的状态且覆盖现在的工作目录"><a href="#使-staging-区域恢复到上次提交时的状态且覆盖现在的工作目录" class="headerlink" title="使 staging 区域恢复到上次提交时的状态且覆盖现在的工作目录"></a>使 staging 区域恢复到上次提交时的状态且覆盖现在的工作目录</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="将当前分支恢复到某次提交，不改变现在的工作目录"><a href="#将当前分支恢复到某次提交，不改变现在的工作目录" class="headerlink" title="将当前分支恢复到某次提交，不改变现在的工作目录"></a>将当前分支恢复到某次提交，不改变现在的工作目录</h2><p>在工作目录中所有的改变<strong>仍然存在</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset dha78as</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="将当前分支恢复到某次提交，覆盖现在的工作目录"><a href="#将当前分支恢复到某次提交，覆盖现在的工作目录" class="headerlink" title="将当前分支恢复到某次提交，覆盖现在的工作目录"></a>将当前分支恢复到某次提交，覆盖现在的工作目录</h2><p>并且<strong>删除</strong>所有未提交的改变和指定提交之后的所有提交</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard dha78as</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h1><p>以下是使用git的常见场景以及其命令，辅以示意图表示</p>
+<hr>
+<h2 id="1-初始化仓库或者克隆仓库"><a href="#1-初始化仓库或者克隆仓库" class="headerlink" title="1. 初始化仓库或者克隆仓库"></a>1. 初始化仓库或者克隆仓库</h2><ul>
+<li>初始化仓库<br>如果创建了一个新的项目，那么就可以使用 <code>git init</code> 初始化本地仓库  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure></li>
+<li>克隆仓库<br>如果已经有了项目，那么就可以使用 <code>git clone</code> 命令克隆一个仓库  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> [url]   </span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h2 id="2-关联远程仓库"><a href="#2-关联远程仓库" class="headerlink" title="2. 关联远程仓库"></a>2. 关联远程仓库</h2><p>这一步用于将远程仓库关联到本地仓库中，这样你就可以推送、拉取、合并代码了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add [remote] [url]</span><br><span class="line"></span><br><span class="line"><span class="comment"># e.g. </span></span><br><span class="line">$ git remote add origin https://github.com/username/project.git</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="3-拉取远程分支到本地"><a href="#3-拉取远程分支到本地" class="headerlink" title="3. 拉取远程分支到本地"></a>3. 拉取远程分支到本地</h2><p>当你初始化仓库或者克隆仓库之后，你需要将远程分支拉到本地，这样你就能同步同事的代码了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 方式一：拉取并切换到新本地分支（推荐）</span></span><br><span class="line">$ git checkout -b 本地分支名 origin/远程分支名  </span><br><span class="line"><span class="comment"># e.g. git checkout -b feature-login origin/feature-login</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 方式二：先拉取所有远程分支，再切换本地分支</span></span><br><span class="line">$ git fetch origin  <span class="comment"># 拉取所有远程分支信息</span></span><br><span class="line">$ git checkout 本地分支名  <span class="comment"># 切换到已有本地分支（需提前创建）</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2025/06/20/gitHELP/fetch.gif" alt="fetch示例"></p>
+<hr>
+<h2 id="4-本地开发与提交修改"><a href="#4-本地开发与提交修改" class="headerlink" title="4. 本地开发与提交修改"></a>4. 本地开发与提交修改</h2><p>假设你现在完成了你的代码工作，需要保存你的代码修改到本地仓库中</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 添加修改到暂存区</span></span><br><span class="line">$ git add 文件名  <span class="comment"># e.g. git add index.html</span></span><br><span class="line">$ git add .  <span class="comment"># 添加所有修改（不包含新增未追踪文件）</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 提交暂存区修改</span></span><br><span class="line">$ git commit -m <span class="string">&quot;提交备注：如‘完成登录页样式开发’&quot;</span></span><br></pre></td></tr></table></figure>
+<p>这里的<code>commit</code>命令之后的文本通常有范式，以下是推荐说明：</p>
+<ul>
+<li>采用<code>具体操作：</code>的形式作为开头，用以描述本次提交的行为，例如：<code>新增：</code>、<code>修复：</code>、<code>优化：</code>、<code>重构：</code>、<code>测试：</code>、<code>文档：</code>、<code>其他：</code>等</li>
+<li>冒号<code>：</code>后用以描述本次提交的具体内容，例如：<code>新增登录页样式</code>、<code>修复登录页样式某具体错误</code>、<code>优化登录页某逻辑</code>、<code>重构登录页某方法</code>、<code>测试登录页样式</code>、<code>编制登录页样式文档说明</code>、<code>其他</code>等</li>
+</ul>
+<hr>
+<h2 id="5-推送本地分支到远程仓库"><a href="#5-推送本地分支到远程仓库" class="headerlink" title="5. 推送本地分支到远程仓库"></a>5. 推送本地分支到远程仓库</h2><p>现在你已经将本地分支的修改保存到本地仓库中，你需要将这些修改推送到远程仓库中，这样其他同事才能同步你的代码<br>但是推送之前，你需要先执行一次拉取分支命令，确保本地分支是最新的，以避免冲突</p>
+<ul>
+<li><p>拉取命令<br>  执行完此命令后，如果出现冲突，请解决冲突并提交修改</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull  <span class="comment"># 拉取并合并远程对应分支的更新</span></span><br></pre></td></tr></table></figure>
+<p>  <img src="/2025/06/20/gitHELP/%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81%E7%A4%BA%E4%BE%8B.png" alt="冲突示例"><br>  <img src="/2025/06/20/gitHELP/%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81.gif" alt="合并冲突示例"></p>
+</li>
+<li><p>推送命令</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 首次推送新分支到远程</span></span><br><span class="line">$ git push -u origin 本地分支名  <span class="comment"># e.g. git push -u origin feature-login</span></span><br><span class="line"><span class="comment"># 作用：推送分支并建立本地与远程的关联，后续可直接用git push</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 非首次推送（已建立关联）</span></span><br><span class="line">$ git push  <span class="comment"># 直接推送当前分支到远程对应分支</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定远程仓库和分支（可选）</span></span><br><span class="line">$ git push origin 本地分支名:远程分支名  <span class="comment"># 例如：git push origin feature-login:feature-</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>  <img src="/2025/06/20/gitHELP/pull.gif" alt="推送示例"></p>
+</li>
+</ul>
+<hr>
+<h2 id="6-分支操作"><a href="#6-分支操作" class="headerlink" title="6. 分支操作"></a>6. 分支操作</h2><h3 id="6-1-创建-切换-删除分支"><a href="#6-1-创建-切换-删除分支" class="headerlink" title="6.1 创建&#x2F;切换&#x2F;删除分支"></a>6.1 创建&#x2F;切换&#x2F;删除分支</h3><p>在多人协作的情景下，一般需要创建自己的分支，并推送到远程仓库中；或者根据开发功能的不同，创建不同的分支以隔离不同功能的开发代码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建新分支并切换到新分支</span></span><br><span class="line">$ git checkout -b newBranch</span><br><span class="line"><span class="comment"># 切换到已有分支</span></span><br><span class="line">$ git checkout oldBranch</span><br><span class="line"><span class="comment"># 删除分支（慎用）</span></span><br><span class="line">$ git branch -d newBranch</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="6-2-合并分支（marge）"><a href="#6-2-合并分支（marge）" class="headerlink" title="6.2 合并分支（marge）"></a>6.2 合并分支（marge）</h3><p>合并分支是指将一个分支的修改合并到另一个分支中，<code>marge</code>命令用于合并分支，使用<code>marge</code>合并会完整的保留合并入分支的所有提交历史，所以当多人在不同分支开发，需要将功能分支合并到主分支时，常用<code>merge</code>，因为其提交能清晰记录分支来源</p>
+<p>示例：合并feature分支到main</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 切换到主分支</span></span><br><span class="line">$ git checkout main</span><br><span class="line"><span class="comment"># 合并feature分支（若main有新提交，会生成合并提交）</span></span><br><span class="line">$ git merge feature</span><br></pre></td></tr></table></figure>
+
+<p>合并后历史会显示一个合并节点，如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">*   Merge branch &#x27;feature&#x27; into main  # 合并提交</span><br><span class="line">|\  </span><br><span class="line">| * commit from feature branch  </span><br><span class="line">* | commit from main branch  </span><br><span class="line">|/  </span><br><span class="line">* initial commit  </span><br></pre></td></tr></table></figure>
+
+<p><img src="/2025/06/20/gitHELP/no-fast-forward.gif" alt="多提交marge合并示例"></p>
+<p>如果主分支没有新提交，合并会触发“快进”合并，历史会变成一条直线，如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* commit from main branch  </span><br><span class="line">|</span><br><span class="line">* commit from feature branch  </span><br><span class="line">|</span><br><span class="line">* initial commit</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2025/06/20/gitHELP/fast-forward.gif" alt="单提交marge合并示例"></p>
+<hr>
+<h3 id="6-3-变基分支（rebase）"><a href="#6-3-变基分支（rebase）" class="headerlink" title="6.3 变基分支（rebase）"></a>6.3 变基分支（rebase）</h3><p>变基分支是指将一个分支的修改应用到另一个分支中，<code>rebase</code>命令用于变基分支，使用<code>rebase</code>变基分支会<strong>删除</strong>变基入分支的所有提交历史，并将它的历史所有提交 “移动” 到目标分支的最新提交之后，在个人分支的开发中，希望分支历史是线性的，便于追溯<br>示例：将feature分支变基到main最新提交</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 切换到feature分支（注意和marge不同，这里是切换到feature分支）</span></span><br><span class="line">$ git checkout feature</span><br><span class="line"><span class="comment"># 变基到main分支的最新提交</span></span><br><span class="line">$ git rebase main</span><br></pre></td></tr></table></figure>
+<p>变基后历史成直线：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* commit from feature branch (变基后)  </span><br><span class="line">|</span><br><span class="line">* commit from main branch  </span><br><span class="line">|</span><br><span class="line">* initial commit  </span><br></pre></td></tr></table></figure>
+<p><img src="/2025/06/20/gitHELP/rebase.gif" alt="变基示例"></p>
+<p><code>marge</code>和<code>rebase</code>推荐：</p>
+<ul>
+<li>场景一：团队协作（多人开发 dev 分支）<ul>
+<li>你在dev1分支开发功能，同事可能在dev分支提交了新代码。<br>  步骤：<ol>
+<li>先切到dev分支，git pull拉取同事的更新（避免合并时冲突）。</li>
+<li>切回dev1分支，用git merge dev将dev的最新状态合并到dev1（此时dev1包含你和同事的修改）。</li>
+<li>确认无误后，再将dev1合并到dev分支（或直接推送dev1分支让同事拉取）。</li>
+</ol>
+</li>
+<li>为啥用 merge？ 因为团队协作中，合并提交能清晰记录 “谁的分支合并到了主分支”，方便追溯。</li>
+</ul>
+</li>
+<li>场景二：个人分支整理（自己的分支无多人协作）<ul>
+<li>你在dev1分支开发，想把修改合并到dev分支，且希望历史更简洁。</li>
+<li>步骤：<ol>
+<li>切到dev1分支，git rebase dev（将dev1的提交 “移动” 到dev最新提交之后）。</li>
+<li>变基完成后，dev1的历史会变成一条直线，此时切到dev分支，用git merge dev1（因为dev1已基于dev最新状态，合并时会触发 “快进”，历史依然简洁）。</li>
+</ol>
+</li>
+<li>为啥用 rebase？ 自己的分支没推送到远程时，用 rebase 重写历史不会影响别人，还能让提交记录更干净（没有合并节点）。</li>
+</ul>
+</li>
+<li>总结关键点<ul>
+<li>团队共享分支（多人协作）：优先用merge，保留合并提交，避免重写历史导致冲突。</li>
+<li>个人本地分支（未推送）：用rebase整理历史，让提交记录更线性，后续合并也更清爽。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="6-4-复制其他分支某次提交（cherry-pick）"><a href="#6-4-复制其他分支某次提交（cherry-pick）" class="headerlink" title="6.4 复制其他分支某次提交（cherry-pick）"></a>6.4 复制其他分支某次提交（cherry-pick）</h3><p>当活动分支需要某个分支的某个提交包含的改动时，我们可以用<code>cherry-pick</code>命令。通过<code>cherry-pick</code>某个提交，在当前活动分支上会创建一个新提交，包含了前者带来的改动</p>
+<p>示例：复制feature分支的某次提交到main分支</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 切换到目标分支</span></span><br><span class="line">$ git checkout main</span><br><span class="line"><span class="comment"># 获取feature分支的某次提交</span></span><br><span class="line">$ git cherry-pick &lt;commit-id&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2025/06/20/gitHELP/cherry-pick.gif" alt="charry-pick示例"></p>
+<hr>
+<h2 id="7-撤销操作"><a href="#7-撤销操作" class="headerlink" title="7. 撤销操作"></a>7. 撤销操作</h2><h3 id="7-1-重置（reset）"><a href="#7-1-重置（reset）" class="headerlink" title="7.1 重置（reset）"></a>7.1 重置（reset）</h3><p>重置命令用于撤销对文件的修改，包括撤销未暂存（未添加到暂存区）的修改、撤销已暂存的修改、撤销已提交的修改</p>
+<ul>
+<li>撤销未暂存的修改：<code>git reset HEAD &lt;file&gt;</code></li>
+<li>撤销已暂存的修改：<code>git reset &lt;file&gt;</code></li>
+<li>撤销已提交的修改：<code>git reset --hard &lt;commit-id&gt;</code></li>
+</ul>
+<p>很明显，通过调整第三个参数，就可以实现三种重置效果</p>
+<p>而重置又分为两种：硬重置和软重置</p>
+<ul>
+<li>硬重置：<code>git reset --hard &lt;commit-id&gt;</code><br><img src="/2025/06/20/gitHELP/hard_reset.gif" alt="硬重置示例"><br>硬重置会直接将当前分支的 HEAD 指针移动到指定提交，并<strong>删除</strong>当前分支的被重置部分的提交历史。</li>
+<li>软重置：<code>git reset --soft &lt;commit-id&gt;</code><br><img src="/2025/06/20/gitHELP/soft_reset.gif" alt="软重置示例"><br>软重置会<strong>保留</strong>当前分支的提交历史，只是将当前分支的 HEAD 移动到指定提交。执行<code>git status</code>，你会看到我们依然能够查看之前提交所做的改动。这很有用，因为这样我们就能继续修改文件内容，后续再次提交了。</li>
+</ul>
+<hr>
+<h3 id="7-2-回滚（revert）"><a href="#7-2-回滚（revert）" class="headerlink" title="7.2 回滚（revert）"></a>7.2 回滚（revert）</h3><p>回滚命令用于撤销对文件的修改，与重置命令不同，<code>revert</code>命令会生成一个<strong>新的</strong>提交，用于撤销某个提交对文件的修改</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git revert &lt;commit-id&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="/2025/06/20/gitHELP/revert.gif" alt="revert示例"></p>
+<hr>
+<h2 id="8-日志操作"><a href="#8-日志操作" class="headerlink" title="8. 日志操作"></a>8. 日志操作</h2><p><code>git reflog</code>是个非常有用的命令，可以显示所有操作的日志。包括<code>merge</code>，<code>reset</code>，<code>revert</code>等，基本上包括了对分支的任何更改。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reflog</span><br></pre></td></tr></table></figure>
+
+<p>打印出来的格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">格式参考：commit-id operation: message</span><br><span class="line">0e4d3f2 HEAD@&#123;0&#125;: commit: fix bug</span><br><span class="line">1a2b3c4 HEAD@&#123;1&#125;: merge feature: Merge made by the &#x27;recursive&#x27; strategy.</span><br><span class="line">5f6g7h8 HEAD@&#123;2&#125;: reset: moving to HEAD~1</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2025/06/20/gitHELP/reflog.gif" alt="reflog示例"><br>获取日志之后可以对其进行重置<code>reset</code>、回滚<code>revert</code>等操作<br><img src="/2025/06/20/gitHELP/reflog2.gif" alt="reflog2示例"><br>如图，最新的操作也记录到<code>reflog</code>里了</p>
+<hr>
+<h1 id="推荐网址"><a href="#推荐网址" class="headerlink" title="推荐网址"></a>推荐网址</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://git-scm.com/docs">Git 官方文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.runoob.com/note/56524">Git 常用命令大全</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-tutorial.html">Git 教程</a></li>
+</ul>
+<h1 id="高僧点评"><a href="#高僧点评" class="headerlink" title="高僧点评"></a>高僧点评</h1><blockquote>
+<p>Git 就是得忘了就去查啊^^</p>
+</blockquote>
+<p>切换到本地分支：<code>git checkout feature</code><br>拉取远程更新：<code>git pull origin feature</code><br>开发修改后提交：<code>git add .</code> + <code>git commit -m &quot;...&quot;</code><br>推送：<code>git push</code></p>
+
+    </div>
+
+    
+    <div class="about">
+        <h1>关于本文</h1>
+        <div class="details">
+            <p>由 Tianyi Zhong 撰写, 采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc/4.0">CC BY-NC 4.0</a> 许可协议.</p>
+        </div>
+        
+        <p class="tags">
+            
+            <i class="icon"></i>
+            <a href="/tags/note/" class="tag">#笔记</a><a href="/tags/study/" class="tag">#学习</a>
+        </p>
+        
+    </div>
+    
+
+    <div class="container post-prev-next">
+        <a class="next"></a>
+        
+        <a href="/2020/02/24/ThebeginningofVirus/" class="prev">
+            <div>
+                <div class="text">
+                    <p class="label">上一篇</p>
+                    <h3 class="title">疫情没事干怀念上了</>
+                </div>
+            </div>
+        </a>
+        
+    </div>
+
+    
+        
+        
+    
+</article>
+
+        <footer>
+    <div class="inner">
+        <div class="links">
+            
+            <div class="group">
+                <h2 class="title">牢铁阴暗沉重的秘密</h2>
+                
+                <a href="/" class="item">幽默主页</a>
+                
+                <a href="/archives" class="item">发电实录</a>
+                
+                <a href="/friends" class="item">友情链接</a>
+                
+                <a href="/projects" class="item">神秘项目</a>
+                
+                <a href="/about" class="item">关于鄙人</a>
+                
+            </div>
+            
+            <div class="group">
+                <h2 class="title">鬼点子超链</h2>
+                
+                <a href="about:blank" class="item">Java.Lang.NullPointerException</a>
+                
+            </div>
+            
+            <div class="group">
+                <h2 class="title">壹拾叁月</h2>
+                
+                <a target="_blank" rel="noopener" href="https://github.com/666zty" class="item">GitHub</a>
+                
+                <a href="mailto:202792883@qq.com" class="item">Email</a>
+                
+            </div>
+            
+        </div>
+        <span>&copy; 2025 Tianyi Zhong<br>由 <a href="http://hexo.io/" target="_blank">Hexo</a> 搭建 </span>
+        
+        
+            <br>
+            <div class="color-scheme-toggle" role="radiogroup" id="theme-color-scheme-toggle">
+                <label>
+                    <input type="radio" value="light">
+                    <span>亮如白昼</span>
+                </label>
+                <label>
+                    <input type="radio" value="dark">
+                    <span>暗如深夜</span>
+                </label>
+                <label>
+                    <input type="radio" value="auto">
+                    <span>随它去吧</span>
+                </label>
+            </div>
+        
+    </div>
+</footer>
+
+
+        
+<script src="/js/main.js"></script>
+
+        
+        
+        
+
+        
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            window.addEventListener('load', () => {
+                ScrollReveal({ delay: 250, reset: true, easing: 'cubic-bezier(0, 0, 0, 1)' })
+                ScrollReveal().reveal('.post-list-item .cover-img img')
+                ScrollReveal().reveal('.post-list-item, .card, .content p img, .content .block-large img', { distance: '60px', origin: 'bottom', duration: 800 })
+            })
+        </script>
+        
+    </body>
+</html>
