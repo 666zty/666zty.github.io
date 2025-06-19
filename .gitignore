@@ -1,0 +1,16 @@
+# 依赖文件和缓存
+node_modules/
+public/         # 生成的静态文件，部署时自动生成
+.deploy_git/    # 部署相关文件夹
+.cache/         # Hexo缓存文件夹
+
+# 编辑器/IDE文件
+.DS_Store       # macOS文件
+.idea/          # IntelliJ IDEA
+.vscode/        # VS Code配置
+
+# 日志文件
+*.log
+
+# 个人配置
+_config.yml     # 如果不想共享你的配置，可以取消注释这行

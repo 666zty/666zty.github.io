@@ -1,0 +1,124 @@
+# REMEMBER TO EDIT THIS BEFORE DEPLOYING!!!
+
+# the path to your blog's icon:
+favicon: /image/icon/favicon/favicon.ico
+
+# the path to manifest.json
+manifest: /manifest.json
+
+# [Open Graph Protocol](https://ogp.me/)
+og_enabled: true
+og_image: /image/icon/favicon/favicon-32x32.png
+og:
+  # customize og properties here which will replace the defaults
+
+# show excerpt on post list
+show_excerpt: false
+
+# light/dark/auto color scheme
+color_scheme: auto
+
+# show floating color theme toggle
+show_color_scheme_toggle: true
+
+# uppercase categories
+uppercase_categories: true
+
+# capitalize tag names on tags page
+capitalize_tags: false
+
+# add hashtag prefix before tags
+hashtag_prefix_before_tags: true
+
+# rainbow!
+rainbow_banner: true
+rainbow_banner_colors:
+  - '#e50000'
+  - '#ff8d00'
+  - '#ffee00'
+  - '#008121'
+  - '#004cff'
+  - '#760188'
+# choose from [auto, always]
+rainbow_banner_shown: auto
+# Pride Month by default
+rainbow_banner_month: 6
+
+# TOC - table of contents
+toc: true
+toc_max_depth: 2
+
+# scroll reveal (https://scrollrevealjs.org/) - animating elements as they enter/leave the viewport
+scroll_reveal: true
+
+# navigation config
+nav:
+  # the title displays in the upper left corner which won't change
+  # title: Blog
+  title: 壹拾叁月
+  # the items displays in the upper right corner
+  items:
+    # these items will display as a link
+    # Archives: /archives
+    # Friends: /friends
+    # Projects: /projects
+    # About: /about
+    发电实录: /archives
+    友情链接: /friends
+    神秘项目: /projects
+    关于鄙人: /about
+    # these will be automatically be an icon
+    GitHub: https://github.com/666zty
+    CodePen: https://codepen.io/mrwillcom
+    Patreon: https://www.patreon.com/MrWillCom
+    Mastodon: https://noc.social/@MrWillCom
+    Discord: https://discord.gg/UKuFDjcfY8
+    Search: /search
+
+# footer items
+footer:
+  # the title
+  牢铁阴暗沉重的秘密:
+    # the items after the title, display as links
+    幽默主页: /
+    发电实录: /archives
+    发电の签: /tags
+    发电の类: /categories
+    大调查: /search
+    友情链接: /friends
+    神秘项目: /projects
+    # Resume: /resume
+    关于鄙人: /about
+    # RSS: /atom.xml
+  # also the title
+  鬼点子超链:
+    # the items
+    # RSA CLI: https://github.com/MrWillCom/rsa-cli
+    # Hexo Theme Cupertino: https://github.com/MrWillCom/hexo-theme-cupertino
+    # A Calendar: https://github.com/MrWillCom/a-calendar
+    # Auto Mirroring Bucket: https://github.com/MrWillCom/auto-mirroring-bucket
+    暂时还没有哦: about:blank
+  # the title
+  壹拾叁月:
+    # items
+    GitHub: https://github.com/666zty
+    # CodePen: https://codepen.io/mrwillcom
+    # Patreon: https://www.patreon.com/MrWillCom
+    # Mastodon: https://noc.social/@MrWillCom
+    # Discord: https://discord.gg/UKuFDjcfY8
+    Email: mailto:202792883@qq.com
+
+# footer extra description
+# footer_extra_description: something will be shown at the bottom of the footer
+
+# the license your posts under
+license: CC BY-NC 4.0
+# the link of your license
+license_link: https://creativecommons.org/licenses/by-nc/4.0
+
+# search
+# based on [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
+search: true
+search_path: search.json
+
+# REMEMBER TO EDIT THIS BEFORE DEPLOYING!!!
