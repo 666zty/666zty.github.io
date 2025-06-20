@@ -15,6 +15,11 @@
     font-weight: 100;
     margin: 0;
     transition: font-size 0.5s;
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.4s;
 }
 
 .hero .large {
@@ -22,6 +27,10 @@
     color: var(--black-2);
     margin: 0;
     transition: font-size 0.5s;
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
 }
 
 .hero .description {
@@ -30,6 +39,30 @@
     margin-top: 16px;
     margin: 0;
     transition: font-size 0.5s;
+
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid currentColor;
+    width: 0;
+    animation: typing 2s steps(60, end) forwards, blink-caret 0.75s step-end infinite;
+    animation-delay: 1s;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: currentColor }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media screen and (max-width: 800px) {
